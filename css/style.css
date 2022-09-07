@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+.over {
+    display: none;
+    animation: navtop linear 0.3s;
+}
+
+.nav_mobile_check:checked~.over {
+    display: block;
+}
+
+.nav_mobile_check:checked~.nav_mobile1 {
+    transform: translateX(0);
+    transition: transform linear 0.3s;
+}
+
+@keyframes navtop {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.product {
+    position: relative;
+}
+
+.product_box {
+    content: 'chưa có sản phẩm trong giỏ hàng';
+    position: absolute;
+    color: #333;
+    width: 264px;
+    height: 125px;
+    border-radius: 10px;
+    right: 0px;
+    top: 45px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #fff;
+    color: rgb(185, 195, 203);
+    box-shadow: 1px 1px 19px -6px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 1px 19px -6px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+}
+
+.product_box::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    right: 0;
+    top: -20px;
+}
+
+.product_box::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -12px;
+    right: 40px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #fff;
+}
+
+.product:hover .product_box {
+    display: block;
+}
+
+.banner {
+    background-image: url(./../img/banner/banner_2.jpg);
+    height: 600px;
+    background-size: cover;
+    position: relative;
+}
+
+.chevron-left {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 40px;
+    border-color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
+    transform: scale(1);
+    transition: all linear 0.3s;
+}
+
+.chevron-left:hover {
+    transform: scale(1.3);
+}
+
+.chevron-right {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    right: 40px;
+    border-color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
+    transform: scale(1);
+    transition: all linear 0.3s;
+}
+
+.chevron-right:hover {
+    transform: scale(1.3);
+}
+
+.buy_now {
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.buy_now:hover {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.2)
+}
+
+.product_sofa {
+    background-image: url(./../img/sofa/sofa1.jpg);
+    transform: scale(1);
+    transition: all linear 0.3s;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+}
+
+.product_link {
+    transform: translateY(-100%);
+    transition: all linear 0.7s;
+    display: none;
+}
+
+.product_item:hover .product_sofa {
+    transform: scale(1.1);
+}
+
+.product_item:hover .product_link {
+    display: block;
+    transform: translateY(0%);
+}
+
+.link_sofa:hover {
+    color: #e2ba48;
+}
+
+body {
+    height: 2000px;
+}
+
+@media (max-width: 1113px) {
+    .banner {
+        height: 330px;
+        background-size: cover;
+    }
+    .chevron-right {
+        width: 30px;
+        height: 30px;
+    }
+    .chevron-left {
+        width: 30px;
+        height: 30px;
+    }
+    .product_sofa {
+        height: 147px;
+    }
+}
