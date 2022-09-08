@@ -74,7 +74,7 @@
 }
 
 .banner {
-    background-image: url(./../img/banner/banner_2.jpg);
+    background-image: url(./../img/banner/banner_1.jpg);
     height: 600px;
     background-size: cover;
     position: relative;
@@ -137,16 +137,14 @@
 }
 
 .product_sofa {
-    background-image: url(./../img/sofa/sofa1.jpg);
     transform: scale(1);
     transition: all linear 0.3s;
     width: 100%;
-    height: 200px;
+    height: 33vh;
     background-size: cover;
 }
 
 .product_link {
-    transform: translateY(-100%);
     transition: all linear 0.7s;
     display: none;
 }
@@ -157,15 +155,96 @@
 
 .product_item:hover .product_link {
     display: block;
-    transform: translateY(0%);
+    transform: translateY(0);
+    color: #e2ba48;
+    opacity: 0.7;
 }
 
 .link_sofa:hover {
     color: #e2ba48;
 }
 
-body {
-    height: 2000px;
+.section-content {
+    height: 284px;
+    width: 100%;
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./../img/a.jpg);
+}
+
+.section_item {
+    width: 30%;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.section_icon {
+    color: #e2ba48;
+    fill: #e2ba48;
+}
+
+.product_tivi {
+    transform: scale(1);
+    transition: all linear 0.3s;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+}
+
+.product_item:hover .product_tivi {
+    transform: scale(1.1);
+}
+
+.product_table {
+    transform: scale(1);
+    transition: all linear 0.3s;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+}
+
+.product_item:hover .product_table {
+    transform: scale(1.1);
+}
+
+.img-inner {
+    background-size: cover;
+    transform: scale(1);
+    overflow: hidden;
+}
+
+.img-inner_item:hover {
+    transform: scale(1.1);
+    transition: all linear 0.3s;
+}
+
+.img-inner_item {
+    transform: scale(1);
+    transition: all ease 0.3s;
+    width: 100%;
+    height: 100%;
+}
+
+.img-inner2 {
+    background-size: cover;
+    overflow: hidden;
+}
+
+.info_link:hover .info-text {
+    color: #e2ba48;
+}
+
+.info_link:hover .img-inner_item {
+    transform: scale(1.1);
+    transition: all linear 0.3s;
+}
+
+.img-inner-info {
+    background-size: cover;
+    transform: scale(1);
+    height: 38vh;
+    overflow: hidden;
 }
 
 @media (max-width: 1113px) {
@@ -184,4 +263,25 @@ body {
     .product_sofa {
         height: 147px;
     }
+    .product_tivi {
+        height: 18vh;
+    }
+    .product_table {
+        height: 20vh;
+    }
+    .section-content {
+        height: 70vh;
+    }
+    .section-content1 {
+        display: block;
+    }
+    .section_item {
+        width: auto;
+        margin-top: 16px;
+        padding-top: 43px;
+    }
+}
+
+body {
+    height: 6000px;
 }
