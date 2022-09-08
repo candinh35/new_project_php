@@ -296,6 +296,119 @@
             padding-left: 30px;
         }
         
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            align-items: center;
+            justify-content: center;
+            transition: all linear 0.3s;
+            display: none;
+        }
+        
+        .modal_container {
+            width: 875px;
+            height: 371px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            animation: login ease 0.3s;
+        }
+        
+        .modal_content {
+            width: 835px;
+            height: 290px;
+        }
+        
+        .modal_header {
+            width: 835px;
+            height: 24px;
+            color: #1c1c1c;
+            font-size: 25px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            line-height: 24px;
+            margin: 0px 0px 10px;
+            text-align: left;
+            text-transform: uppercase
+        }
+        
+        .modal_close {
+            position: absolute;
+            top: 0;
+            right: 20px;
+            font-size: 35px;
+            opacity: 0.6;
+            cursor: pointer;
+        }
+        
+        .modal_label {
+            display: block;
+        }
+        
+        .modal_input {
+            margin-bottom: 10px;
+            margin-top: 5px;
+            display: block;
+            outline: none;
+            width: 100%;
+            height: 35px;
+            padding: 5px 10px;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            box-shadow: 1px 1px 10px -14px rgba(0, 0, 0, 0.5);
+            -webkit-box-shadow: 1px 1px 10px -14px rgba(0, 0, 0, 0.5);
+        }
+        
+        #login {
+            width: 143px;
+            height: 39px;
+            align-items: flex-start;
+            background-color: #2d2d2d;
+            border-color: #000000;
+            border-style: solid;
+            border-width: 1px;
+            box-shadow: #000000 0px 0px 0px 0px;
+            color: #ffffff;
+            display: inline-block;
+            font-size: 15.52px;
+            font-weight: 700;
+            letter-spacing: 0.4656px;
+            line-height: 37.248px;
+            margin: 0px 15.52px 0px 0px;
+            padding: 0px 18.624px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+        
+        .modal_footer {
+            width: 120px;
+            display: block;
+            margin-top: 20px;
+        }
+        
+        .modal_footer:hover {
+            color: #e2ba48;
+        }
+        
+        .modal.open {
+            display: flex;
+        }
+        
+        @keyframes login {
+            from {
+                transform: translateY(-140px)
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        
         @media (max-width: 740px) {
             .banner {
                 height: 330px;
@@ -343,8 +456,4 @@
             .footer_list-info {
                 margin-top: 30px;
             }
-        }
-        
-        body {
-            height: 6000px;
         }

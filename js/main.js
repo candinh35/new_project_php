@@ -75,3 +75,29 @@ function prev() {
     }
     slider.style.backgroundImage = `url(${banner[num]})`
 }
+
+// login
+
+const login = document.querySelector('.login-js')
+const modal = document.querySelector('.js_modal')
+const modalClose = document.querySelector('.js_modal-close')
+const modalContainer = document.querySelector('.js-modal_container')
+
+// thêm class  cho modal để show ra 
+login.addEventListener('click', function() {
+    modal.classList.add('open');
+})
+
+// xóa class đi dể đóng lại
+
+modalClose.addEventListener('click', function() {
+        modal.classList.remove('open');
+    })
+    // thêm sự kiện click bên ngoài container vẫn được đóng
+modal.addEventListener('click', function() {
+        modal.classList.remove('open');
+    })
+    //   ngăn chặn sự kiện nổi bọt
+modalContainer.addEventListener('click', function(even) {
+    even.stopPropagation()
+})

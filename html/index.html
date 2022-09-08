@@ -53,7 +53,8 @@
             </div>
             <div class="flex lg:mr-14 mr-6 ">
                 <div class="hover:text-amber-600 relative before:content-[''] before:h-5 before:border-l-2 before:absolute before:right-0 before:border-gray-400 before:translate-y-1 mr-1 lg:block hidden">
-                    <a class="hover:text-amber-600 text-lg mr-2 text-zinc-500 " href="">ĐĂNG NHẬP</a>
+                    <button class="hover:text-amber-600 text-lg mr-2 text-zinc-500 login-js" href="">ĐĂNG NHẬP</button>
+
                 </div>
                 <div class="hover:text-amber-600 flex gap-1 product">
                     <a class="hover:text-amber-600 text-lg lg:mr-1 text-zinc-500 lg:block hidden" href="">GIỎ HÀNG</a>
@@ -540,7 +541,7 @@
             </div>
         </div>
     </div>
-    <!-- FOOTER -->
+    <!-- google map -->
     <div class="container lg:w-11/12 w-full lg:mx-auto mx-0 mt-14">
         <div>
             <h3 class="lg:text-4xl text-2xl  lg:mb-8 ml-3">Địa chỉ</h3>
@@ -548,6 +549,7 @@
         <iframe class=" w-full " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.735219368573!2d105.77804671473172!3d21.04327798599051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454cca30c3f95%3A0x9626e09f681b7ea!2zTmcuIDg5IFBo4bqhbSBWxINuIMSQ4buTbmcsIE1haSBE4buLY2gsIEPhuqd1IEdp4bqleSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1662607159624!5m2!1svi!2s "
             width="600 " height="350 " style="border:0; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
     </div>
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container lg:w-11/12 w-full lg:mx-auto mx-0 mt-14 ">
             <div class="lg:flex justify-between ">
@@ -599,6 +601,29 @@
         </div>
 
     </footer>
+    <div class="modal js_modal">
+        <div class="modal_container js-modal_container">
+            <div class="modal_close js_modal-close"><i class="fa-solid fa-xmark"></i></div>
+            <div class="modal_content">
+                <header class="modal_header">
+                    ĐĂNG NHẬP
+                </header>
+                <div class="modal_body">
+                    <label for="" class="modal_label">Tên tài khoản hoặc địa chỉ email *</label>
+                    <input class="modal_input" type="email" placeholder="Email ...">
+                    <label for="" class="modal_label">Mật khẩu *</label>
+                    <input class="modal_input" type="passwork" placeholder="Mật Khẩu">
+                    <button id="login">ĐĂNG NHẬP</button>
+                    <input type="checkbox" class="modal_check">
+                    <label for="">Ghi nhớ mật khẩu</label>
+
+                </div>
+                <footer>
+                    <a class="modal_footer" href="">Quên mật khẩu?</a>
+                </footer>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="./../js/main.js "></script>
 
