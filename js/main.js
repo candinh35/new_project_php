@@ -11,6 +11,7 @@ var sofaImg = [
     "./../img/sofa/sofa6.jpg",
     "./../img/sofa/sofa7.jpg",
     "./../img/sofa/sofa8.jpg",
+    "./../img/sofa/sofa9.jpg",
 ]
 
 var tiviImg = [
@@ -31,6 +32,7 @@ var tableImg = [
     "./../img/table/table6.jpg",
     "./../img/table/table7.jpg",
     "./../img/table/table8.jpg",
+    "./../img/table/table9.jpg",
 ]
 var table = document.querySelectorAll('.product_table');
 var sofa = document.querySelectorAll('.product_sofa');
@@ -82,6 +84,12 @@ const login = document.querySelector('.login-js')
 const modal = document.querySelector('.js_modal')
 const modalClose = document.querySelector('.js_modal-close')
 const modalContainer = document.querySelector('.js-modal_container')
+const input = document.querySelector('.modal_input')
+
+
+
+// hiện header khi xuống dưới
+
 
 // thêm class  cho modal để show ra 
 login.addEventListener('click', function() {
@@ -100,4 +108,27 @@ modal.addEventListener('click', function() {
     //   ngăn chặn sự kiện nổi bọt
 modalContainer.addEventListener('click', function(even) {
     even.stopPropagation()
+})
+
+// validate
+
+document.addEventListener("DOMContentLoaded", function() {
+    const header = document.querySelector('.js-header')
+        //Truy xuất div menu
+    var trangthai = "300";
+    window.addEventListener("scroll", function() {
+        var x = pageYOffset;
+        if (x > 300) {
+            if (trangthai == "300") {
+                trangthai = "301";
+                header.classList.add('open');
+            }
+        } else {
+            if (trangthai == "301") {
+                header.classList.remove('open');
+                trangthai = "300";
+            }
+        }
+
+    })
 })

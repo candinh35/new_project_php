@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header class="header ">
+    <header class="header js-header">
         <nav class="flex justify-between items-center bg-zinc-100 h-24">
             <label for="nav_mobile" class="lg:hidden block text-2xl ml-7 mr-16 menu">
                 <i class="fa-solid fa-bars"></i>
@@ -36,8 +36,8 @@
                         <li class="pt-4 pb-4 border-t flex items-center">BÀN GHÉ</li>
                         <li class="pt-4 pb-4 border-t flex items-center">BÀN GHẾ SOFA</li>
                         <li class="pt-4 pb-4 border-t flex items-center">KỆ TIVI</li>
-                        <li class="pt-4 pb-4 border-t flex items-center">TIN TỨC</li>
-                        <li class="pt-4 pb-4 border-t flex items-center">LIÊN HỆ</li>
+                        <li class="pt-4 pb-4 border-t flex items-center"><a href="news.html">TIN TỨC</a></li>
+                        <li class="pt-4 pb-4 border-t flex items-center"><a href="contact.html">LIÊN HỆ</a></li>
                         <li class="pt-4 pb-4 border-t flex items-center">ĐĂNG NHẬP</li>
                         <li class="pt-4 pb-4 border-t flex items-center">GIỎ HÀNG</li>
                         <li class="pt-4 pb-4 border-t flex items-center"></li>
@@ -49,7 +49,7 @@
                 <i class="absolute right-3 top-2.5 fa-solid fa-magnifying-glass"></i>
             </div>
             <div class="w-52 h-14 lg:mr-0 mr-16">
-                <img src="./../img/logo/logo-mona-furniture-14.png" alt="logo-mona-furniture-14" class="w-full h-full">
+                <a href="index.html"><img src="./../img/logo/logo-mona-furniture-14.png" alt="logo-mona-furniture-14" class="w-full h-full"></a>
             </div>
             <div class="flex lg:mr-14 mr-6 ">
                 <div class="hover:text-amber-600 relative before:content-[''] before:h-5 before:border-l-2 before:absolute before:right-0 before:border-gray-400 before:translate-y-1 mr-1 lg:block hidden">
@@ -65,22 +65,22 @@
         </nav>
         <div class=" gap-10 justify-center p-5 lg:flex hidden">
             <div class="hover:text-amber-600 ">
-                <a href="">GIỚI THIỆU</a>
+                <a href="introduce.html">GIỚI THIỆU</a>
             </div>
             <div class="hover:text-amber-600 ">
-                <a href="">BÀN GHẾ</a>
+                <a href="table.html">BÀN GHẾ</a>
             </div>
             <div class="hover:text-amber-600 ">
-                <a href="">BÀN GHẾ SOFA</a>
+                <a href="sofa.html">BÀN GHẾ SOFA</a>
             </div>
             <div class="hover:text-amber-600 ">
-                <a href="">KỆ TIVI</a>
+                <a href="tivi.html">KỆ TIVI</a>
             </div>
             <div class="hover:text-amber-600 ">
-                <a href="">TIN TỨC</a>
+                <a href="news.html">TIN TỨC</a>
             </div>
             <div class="hover:text-amber-600 ">
-                <a href="">LIÊN HỆ</a>
+                <a href="contact.html">LIÊN HỆ</a>
             </div>
         </div>
     </header>
@@ -608,19 +608,23 @@
                 <header class="modal_header">
                     ĐĂNG NHẬP
                 </header>
-                <div class="modal_body">
-                    <label for="" class="modal_label">Tên tài khoản hoặc địa chỉ email *</label>
-                    <input class="modal_input" type="email" placeholder="Email ...">
-                    <label for="" class="modal_label">Mật khẩu *</label>
-                    <input class="modal_input" type="passwork" placeholder="Mật Khẩu">
-                    <button id="login">ĐĂNG NHẬP</button>
-                    <input type="checkbox" class="modal_check">
-                    <label for="">Ghi nhớ mật khẩu</label>
+                <form action="" method="get">
+                    <div class="modal_body">
 
-                </div>
-                <footer>
-                    <a class="modal_footer" href="">Quên mật khẩu?</a>
-                </footer>
+                        <label for="" class="modal_label">Tên tài khoản hoặc địa chỉ email *</label>
+                        <input required class="modal_input" type="email" placeholder="Email ...">
+                        <label for="" class="modal_label">Mật khẩu *</label>
+                        <input required class="modal_input" type="password" placeholder="Mật Khẩu">
+                        <button id="login">ĐĂNG NHẬP</button>
+                        <input type="checkbox" class="modal_check">
+                        <label for="">Ghi nhớ mật khẩu</label>
+
+                    </div>
+                    <footer>
+                        <a class="modal_footer" href="">Quên mật khẩu?</a>
+                    </footer>
+                </form>
+
             </div>
         </div>
     </div>

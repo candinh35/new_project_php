@@ -3,6 +3,17 @@
             list-style: none;
         }
         
+        .header.open {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+            background-color: #fff;
+            animation: login ease 0.3s;
+            box-shadow: -3px 14px 10px -14px rgba(0, 0, 0, 0.5);
+            -webkit-box-shadow: -3px 14px 10px -14px rgba(0, 0, 0, 0.5);
+        }
+        
         .over {
             display: none;
             animation: navtop linear 0.3s;
