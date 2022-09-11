@@ -85,6 +85,10 @@ const modal = document.querySelector('.js_modal')
 const modalClose = document.querySelector('.js_modal-close')
 const modalContainer = document.querySelector('.js-modal_container')
 const input = document.querySelector('.modal_input')
+const signup = document.querySelector('.modal_signup')
+const modalSignup = document.querySelector('.js_modal-signup')
+const modalContainerSignup = document.querySelector('.js-modal_container-signup')
+const modalCloseSignup = document.querySelector('.js_modal-close-signup')
 
 
 
@@ -110,7 +114,7 @@ modalContainer.addEventListener('click', function(even) {
     even.stopPropagation()
 })
 
-// validate
+// thanh menu gán trên đầu
 
 document.addEventListener("DOMContentLoaded", function() {
     const header = document.querySelector('.js-header')
@@ -131,4 +135,24 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
     })
+})
+
+// mở phần đăng ký
+
+signup.addEventListener('click', function() {
+    modal.classList.remove('open');
+    modalSignup.classList.add('open')
+
+})
+
+modalContainerSignup.addEventListener('click', function(even) {
+    even.stopPropagation()
+})
+
+modalCloseSignup.addEventListener('click', function() {
+    modalSignup.classList.remove('open');
+})
+
+modalSignup.addEventListener('click', function() {
+    modalSignup.classList.remove('open')
 })

@@ -182,6 +182,7 @@
         </div>
 
     </footer>
+    <!-- đăng nhập -->
     <div class="modal js_modal">
         <div class="modal_container js-modal_container">
             <div class="modal_close js_modal-close"><i class="fa-solid fa-xmark"></i></div>
@@ -201,9 +202,37 @@
                         <label for="">Ghi nhớ mật khẩu</label>
 
                     </div>
-                    <footer>
+                    <footer class="flex justify-between">
                         <a class="modal_footer" href="">Quên mật khẩu?</a>
+                        <p class="modal_signup" href="">Bạn chưa có tài khoản ?</p>
                     </footer>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- đăng ký -->
+    <div class="modal-signup js_modal-signup">
+        <div class="modal_container-signup js-modal_container-signup">
+            <div class="modal_close-signup js_modal-close-signup"><i class="fa-solid fa-xmark"></i></div>
+            <div class="modal_content-signup">
+                <header class="modal_header-signup">
+                    ĐĂNG KÝ
+                </header>
+                <form action="" method="get">
+                    <div class="modal_body-signup">
+
+                        <label for="" class="modal_label-signup">Tên tài khoản hoặc địa chỉ email *</label>
+                        <input required class="modal_input-signup" type="email" placeholder="Email ...">
+                        <label for="" class="modal_label-signup">Mật khẩu *</label>
+                        <input required class="modal_input-signup" type="password" placeholder="Mật Khẩu">
+                        <label for="" class="modal_label-signup">Nhập lại mật khẩu *</label>
+                        <input required class="modal_input-signup" type="password" placeholder="Mật Khẩu">
+                        <button id="signup">ĐĂNG KÝ</button>
+
+                    </div>
                 </form>
 
             </div>
