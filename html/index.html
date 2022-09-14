@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../css/fontawesome-free-6.2.0-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    <title>Trang chủ</title>
+</head>
+
+<body>
+    <header class="header js-header">
+        <nav class="flex justify-between items-center bg-zinc-100 h-24">
+            <label for="nav_mobile" class="lg:hidden block text-2xl ml-7 mr-16 menu">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="lg:hidden block">
+                <input type="checkbox" class="nav_mobile_check hidden" id="nav_mobile">
+                <label for="nav_mobile" class="over fixed bg-opacity-20 bg-slate-600 top-0 right-0 bottom-0  left-0 z-10">
+                <label for="nav_mobile">
+                    <i class="fa-solid fa-xmark top-4 right-7 text-4xl absolute"></i>
+                </label>
+                </label>
+                <div class="nav_mobile1 fixed top-0 left-0 bottom-0 w-80 max-w-full bg-white z-20 -translate-x-80">
+                    <div class="relative left-6 mb-5">
+                        <input class="rounded-2xl focus:outline-none w-56 h-8 mt-11 p-4 pb-5 f bg-zinc-200" type="text" placeholder="Tìm kiếm...">
+                        <i class="absolute right-28 top-14 fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <ul class="ml-6">
+                        <li class="pt-4 pb-4 border-t flex items-center"><a href="introduce.html"> GIỚI THIỆU</a></li>
+                        <li class="pt-4 pb-4 border-t flex items-center"><a href="table.html">BÀN GHẾ</a></li>
+                        <li class="pt-4 pb-4 border-t flex items-center"><a href="sofa.html">BÀN GHẾ SOFA</a></li>
+                        <li class="pt-4 pb-4 border-t flex items-center"><a href="tivi.html">KỆ TIVI</a></li>
+                        <li class="pt-4 pb-4 border-t flex items-center"><a href="news.html">TIN TỨC</a></li>
+                        <li class="pt-4 pb-4 border-t flex items-center"><a href="contact.html">LIÊN HỆ</a></li>
+                        <li class="pt-4 pb-4 border-t flex items-center">ĐĂNG NHẬP</li>
+                        <li class="pt-4 pb-4 border-t flex items-center">GIỎ HÀNG</li>
+                        <li class="pt-4 pb-4 border-t flex items-center"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="relative left-14 hidden lg:block">
+                <input class="rounded-2xl focus:outline-none w-80 h-8  p-4 pb-5 f bg-zinc-200" type="text" placeholder="Tìm kiếm...">
+                <i class="absolute right-3 top-2.5 fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="w-52 h-14 lg:mr-0 mr-16">
+                <a href="index.html"><img src="./../img/logo/logo-mona-furniture-14.png" alt="logo-mona-furniture-14" class="w-full h-full"></a>
+            </div>
+            <div class="flex lg:mr-14 mr-6 ">
+                <div class="hover:text-amber-600 relative before:content-[''] before:h-5 before:border-l-2 before:absolute before:right-0 before:border-gray-400 before:translate-y-1 mr-1 lg:block hidden">
+                    <button class="hover:text-amber-600 text-lg mr-2 text-zinc-500 login-js" href="">ĐĂNG NHẬP</button>
+
+                </div>
+                <div class="hover:text-amber-600 flex gap-1 product">
+                    <a class="hover:text-amber-600 text-lg lg:mr-1 text-zinc-500 lg:block hidden" href="">GIỎ HÀNG</a>
+                    <i class="fa-solid fa-cart-plus lg:text-2xl text-2xl"></i>
+                    <div class="product_box">chưa có sản phẩm trong giỏ hàng</div>
+                </div>
+            </div>
+        </nav>
+        <div class=" gap-10 justify-center p-5 lg:flex hidden">
+            <div class="hover:text-amber-600 ">
+                <a href="introduce.html">GIỚI THIỆU</a>
+            </div>
+            <div class="hover:text-amber-600 ">
+                <a href="table.html">BÀN GHẾ</a>
+            </div>
+            <div class="hover:text-amber-600 ">
+                <a href="sofa.html">BÀN GHẾ SOFA</a>
+            </div>
+            <div class="hover:text-amber-600 ">
+                <a href="tivi.html">KỆ TIVI</a>
+            </div>
+            <div class="hover:text-amber-600 ">
+                <a href="news.html">TIN TỨC</a>
+            </div>
+            <div class="hover:text-amber-600 ">
+                <a href="contact.html">LIÊN HỆ</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- banner -->
+    <div id="slider" class="banner   lg:w-11/12 w-full lg:mx-auto ">
+        <div class="absolute lg:bottom-28 lg:left-48 left-16 lg:top-auto top-7">
+            <h1 class="lg:text-6xl text-xl text-white">SOFA SET WITH LOUNGER</h1>
+            <h2 class="lg:text-4xl text-base text-white mt-4">Reveal Yourslef THROUGH YOUR CHOICE</h2>
+            <div class="lg:w-36 lg:h-10 w-28 h-9 lg:text-2xl text-base buy_now">
+                <a href="">MUA NGAY</a>
+            </div>
+        </div>
+        <span onclick="next()" class="chevron-left"><i class="fa-solid fa-chevron-left"></i></span>
+        <span onclick="prev()" class="chevron-right"><i class="fa-solid fa-chevron-right"></i></span>
+    </div>
+    <!--    content -->
+    <div class="container lg:w-11/12 w-11/12 lg:mx-auto mx-0 mt-14">
+        <div>
+            <h3 class="lg:text-4xl text-2xl  lg:mb-8 ml-3">bàn ghế sofa</h3>
+        </div>
+        <div class="grid lg:grid-cols-4 grid-cols-2 lg:gap-3 gap-2 ml-5 relative">
+            <div class="product_item">
+                <a href="">
+                    <div class="product_sofa "></div>
+                </a>
+                <a class="product_link" href="">
+                    <i class="absolute -bottom-20 left-8 fa-solid fa-cart-plus lg:text-2xl lg:block hidden"></i>
+                </a>
+                <div class="w-36 lg:mt-20 mt-2   mx-auto text-center">
+                    <P class="text-xs opacity-60">BÀN GHẾ SOFA</P>
+                    <a class="link_sofa" href="">
+                        <h4>Ghế sofa SF108</h4>
+                    </a>
+                    <strong>13,576,000 đ</strong>
+                </div>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_sofa "></div>
+                </a>
+                <a class="product_link" href="">
+                    <i class="absolute -bottom-20 left-8 fa-solid fa-cart-plus lg:text-2xl lg:block hidden"></i>
+                </a>
+                <div class="w-36 lg:mt-20 mt-2   mx-auto text-center">
+                    <P class="text-xs opacity-60">BÀN GHẾ SOFA</P>
+                    <a class="link_sofa" href="">
+                        <h4>Ghế sofa SF108</h4>
+                    </a>
+                    <strong>13,576,000 đ</strong>
+                </div>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_sofa "></div>
+                </a>
+                <a class="product_link" href="">
+                    <i class="absolute -bottom-20 left-8 fa-solid fa-cart-plus lg:text-2xl lg:block hidden"></i>
+                </a>
+                <div class="w-36 lg:mt-20 mt-2   mx-auto text-center">
+                    <P class="text-xs opacity-60">BÀN GHẾ SOFA</P>
+                    <a class="link_sofa" href="">
+                        <h4>Ghế sofa SF108</h4>
+                    </a>
+                    <strong>13,576,000 đ</strong>
+                </div>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_sofa "></div>
+                </a>
+                <a class="product_link" href="">
+                    <i class="absolute -bottom-20 left-8 fa-solid fa-cart-plus lg:text-2xl lg:block hidden"></i>
+                </a>
+                <div class="w-36 lg:mt-20 mt-2   mx-auto text-center">
+                    <P class="text-xs opacity-60">BÀN GHẾ SOFA</P>
+                    <a class="link_sofa" href="">
+                        <h4>Ghế sofa SF108</h4>
+                    </a>
+                    <strong>13,576,000 đ</strong>
+                </div>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_sofa "></div>
+                </a>
+                <a class="product_link" href="">
+                    <i class="absolute -bottom-20 left-8 fa-solid fa-cart-plus lg:text-2xl lg:block hidden"></i>
+                </a>
+                <div class="w-36 lg:mt-20 mt-2   mx-auto text-center">
+                    <P class="text-xs opacity-60">BÀN GHẾ SOFA</P>
+                    <a class="link_sofa" href="">
+                        <h4>Ghế sofa SF108</h4>
+                    </a>
+                    <strong>13,576,000 đ</strong>
+                </div>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_sofa "></div>
+                </a>
+                <a class="product_link" href="">
+                    <i class="absolute -bottom-20 left-8 fa-solid fa-cart-plus lg:text-2xl lg:block hidden"></i>
+                </a>
+                <div class="w-36 lg:mt-20 mt-2   mx-auto text-center">
+                    <P class="text-xs opacity-60">BÀN GHẾ SOFA</P>
+                    <a class="link_sofa" href="">
+                        <h4>Ghế sofa SF108</h4>
+                    </a>
+                    <strong>13,576,000 đ</strong>
+                </div>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_sofa "></div>
+                </a>
+                <a class="product_link" href="">
+                    <i class="absolute -bottom-20 left-8 fa-solid fa-cart-plus lg:text-2xl lg:block hidden"></i>
+                </a>
+                <div class="w-36 lg:mt-20 mt-2   mx-auto text-center">
+                    <P class="text-xs opacity-60">BÀN GHẾ SOFA</P>
+                    <a class="link_sofa" href="">
+                        <h4>Ghế sofa SF108</h4>
+                    </a>
+                    <strong>13,576,000 đ</strong>
+                </div>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_sofa "></div>
+                </a>
+                <a class="product_link" href="">
+                    <i class="absolute -bottom-20 left-8 fa-solid fa-cart-plus lg:text-2xl lg:block hidden"></i>
+                </a>
+                <div class="w-36 lg:mt-20 mt-2   mx-auto text-center">
+                    <P class="text-xs opacity-60">BÀN GHẾ SOFA</P>
+                    <a class="link_sofa" href="">
+                        <h4>Ghế sofa SF108</h4>
+                    </a>
+                    <strong>13,576,000 đ</strong>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="section-content ">
+        <div class="lg:w-11/12 w-full lg:mx-auto lg:flex justify-between section-content1">
+            <div class="section_item ">
+                <i class="fa-solid fa-truck-moving text-4xl section_icon"></i>
+                <h2 class="mt-7 text-2xl text-white">FREE SHIP</h2>
+                <p class="mt-2 text-white">Lorem ipsum dolor sit amet, consectetuer</p>
+            </div>
+            <div class="section_item ">
+                <i class="fa-solid fa-gift text-4xl section_icon"></i>
+                <h2 class="mt-7 text-2xl text-white">SPECIAL BOOST GIFT</h2>
+                <p class="mt-2 text-white">Lorem ipsum dolor sit amet, consectetuer</p>
+            </div>
+
+            <div class="section_item ">
+                <i class="fa-sharp fa-solid fa-piggy-bank text-4xl section_icon"></i>
+                <h2 class="mt-7 text-2xl text-white">SAVE WHEN SHOPPING IN MONA</h2>
+                <p class="mt-2 text-white">Lorem ipsum dolor sit amet, consectetuer</p>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- sản phẩm tivi -->
+    <div class="container lg:w-11/12 w-11/12 lg:mx-auto mx-0 mt-14">
+        <div>
+            <h3 class="lg:text-4xl text-2xl  lg:mb-8 ml-3">kệ tivi</h3>
+        </div>
+        <div class="grid lg:grid-cols-4 grid-cols-2 lg:gap-3 gap-2 ml-5 relative">
+            <div class="product_item">
+                <a href="">
+                    <div class="product_tivi "></div>
+                </a>
+                <a class="product_link" href="">
+                    <i class="absolute -bottom-20 left-8 fa-solid fa-cart-plus lg:text-2xl lg:block hidden"></i>
+                </a>
+                <div class="w-36 lg:mt-20 mt-2   mx-auto text-center">
+                    <P class="text-xs opacity-60">BÀN GHẾ SOFA</P>
+                    <a class="link_sofa" href="">
+                        <h4>Ghế sofa SF108</h4>
+                    </a>
+                    <strong>13,576,000 đ</strong>
+                </div>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_tivi "></div>
+                </a>
+                <a class="product_link" href="">
+                    <i class="absolute -bottom-20 left-8 fa-solid fa-cart-plus lg:text-2xl lg:block hidden"></i>
+                </a>
+                <div class="w-36 lg:mt-20 mt-2   mx-auto text-center">
+                    <P class="text-xs opacity-60">BÀN GHẾ SOFA</P>
+                    <a class="link_sofa" href="">
+                        <h4>Ghế sofa SF108</h4>
+                    </a>
+                    <strong>13,576,000 đ</strong>
+                </div>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_tivi "></div>
+                </a>
+                <a class="product_link" href="">
+                    <i class="absolute -bottom-20 left-8 fa-solid fa-cart-plus lg:text-2xl lg:block hidden"></i>
+                </a>
+                <div class="w-36 lg:mt-20 mt-2   mx-auto text-center">
+                    <P class="text-xs opacity-60">BÀN GHẾ SOFA</P>
+                    <a class="link_sofa" href="">
+                        <h4>Ghế sofa SF108</h4>
+                    </a>
+                    <strong>13,576,000 đ</strong>
+                </div>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_tivi "></div>
+                </a>
+                <a class="product_link" href="">
+                    <i class="absolute -bottom-20 left-8 fa-solid fa-cart-plus lg:text-2xl lg:block hidden"></i>
+                </a>
+                <div class="w-36 lg:mt-20 mt-2   mx-auto text-center">
+                    <P class="text-xs opacity-60">BÀN GHẾ SOFA</P>
+                    <a class="link_sofa" href="">
+                        <h4>Ghế sofa SF108</h4>
+                    </a>
+                    <strong>13,576,000 đ</strong>
+                </div>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_tivi "></div>
+                </a>
+                <a class="product_link" href="">
+                    <i class="absolute -bottom-20 left-8 fa-solid fa-cart-plus lg:text-2xl lg:block hidden"></i>
+                </a>
+                <div class="w-36 lg:mt-20 mt-2   mx-auto text-center">
+                    <P class="text-xs opacity-60">BÀN GHẾ SOFA</P>
+                    <a class="link_sofa" href="">
+                        <h4>Ghế sofa SF108</h4>
+                    </a>
+                    <strong>13,576,000 đ</strong>
+                </div>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_tivi "></div>
+                </a>
+                <a class="product_link" href="">
+                    <i class="absolute -bottom-20 left-8 fa-solid fa-cart-plus lg:text-2xl lg:block hidden"></i>
+                </a>
+                <div class="w-36 lg:mt-20 mt-2   mx-auto text-center">
+                    <P class="text-xs opacity-60">BÀN GHẾ SOFA</P>
+                    <a class="link_sofa" href="">
+                        <h4>Ghế sofa SF108</h4>
+                    </a>
+                    <strong>13,576,000 đ</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid lg:grid-cols-2 grid-cols-1 gap-4 h-96 mt-14 w-full">
+        <div class="img-inner">
+            <a href=""><img class="img-inner_item" src="./../img/sale/sale1.jpg" alt=""></a>
+
+        </div>
+        <div class="img-inner2">
+            <a href=""><img class="img-inner_item" src="./../img/sale/sale2.jpg" alt=""></a>
+
+        </div>
+    </div>
+    <!-- sản phẩm bàn ghế -->
+    <div class="container lg:w-11/12 w-11/12 lg:mx-auto mx-0 mt-14">
+        <div>
+            <h3 class="lg:text-4xl text-2xl  lg:mb-8 ml-3">kệ tivi</h3>
+        </div>
+        <div class="grid lg:grid-cols-4 grid-cols-2 lg:gap-3 gap-2 ml-5 relative">
+            <div class="product_item">
+                <a href="">
+                    <div class="product_table "></div>
+                </a>
+                <a class="product_link" href="">
+                    <i class="absolute -bottom-20 left-8 fa-solid fa-cart-plus lg:text-2xl lg:block hidden"></i>
+                </a>
+                <div class="w-36 lg:mt-20 mt-2   mx-auto text-center">
+                    <P class="text-xs opacity-60">BÀN GHẾ SOFA</P>
+                    <a class="link_sofa" href="">
+                        <h4>Ghế sofa SF108</h4>
+                    </a>
+                    <strong>13,576,000 đ</strong>
+                </div>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_table "></div>
+                </a>
+                <a class="product_link" href="">
+                    <i class="absolute -bottom-20 left-8 fa-solid fa-cart-plus lg:text-2xl lg:block hidden"></i>
+                </a>
+                <div class="w-36 lg:mt-20 mt-2   mx-auto text-center">
+                    <P class="text-xs opacity-60">BÀN GHẾ SOFA</P>
+                    <a class="link_sofa" href="">
+                        <h4>Ghế sofa SF108</h4>
+                    </a>
+                    <strong>13,576,000 đ</strong>
+                </div>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_table "></div>
+                </a>
+                <a class="product_link" href="">
+                    <i class="absolute -bottom-20 left-8 fa-solid fa-cart-plus lg:text-2xl lg:block hidden"></i>
+                </a>
+                <div class="w-36 lg:mt-20 mt-2   mx-auto text-center">
+                    <P class="text-xs opacity-60">BÀN GHẾ SOFA</P>
+                    <a class="link_sofa" href="">
+                        <h4>Ghế sofa SF108</h4>
+                    </a>
+                    <strong>13,576,000 đ</strong>
+                </div>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_table "></div>
+                </a>
+                <a class="product_link" href="">
+                    <i class="absolute -bottom-20 left-8 fa-solid fa-cart-plus lg:text-2xl lg:block hidden"></i>
+                </a>
+                <div class="w-36 lg:mt-20 mt-2   mx-auto text-center">
+                    <P class="text-xs opacity-60">BÀN GHẾ SOFA</P>
+                    <a class="link_sofa" href="">
+                        <h4>Ghế sofa SF108</h4>
+                    </a>
+                    <strong>13,576,000 đ</strong>
+                </div>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_table "></div>
+                </a>
+                <a class="product_link" href="">
+                    <i class="absolute -bottom-20 left-8 fa-solid fa-cart-plus lg:text-2xl lg:block hidden"></i>
+                </a>
+                <div class="w-36 lg:mt-20 mt-2   mx-auto text-center">
+                    <P class="text-xs opacity-60">BÀN GHẾ SOFA</P>
+                    <a class="link_sofa" href="">
+                        <h4>Ghế sofa SF108</h4>
+                    </a>
+                    <strong>13,576,000 đ</strong>
+                </div>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_table "></div>
+                </a>
+                <a class="product_link" href="">
+                    <i class="absolute -bottom-20 left-8 fa-solid fa-cart-plus lg:text-2xl lg:block hidden"></i>
+                </a>
+                <div class="w-36 lg:mt-20 mt-2   mx-auto text-center">
+                    <P class="text-xs opacity-60">BÀN GHẾ SOFA</P>
+                    <a class="link_sofa" href="">
+                        <h4>Ghế sofa SF108</h4>
+                    </a>
+                    <strong>13,576,000 đ</strong>
+                </div>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_table "></div>
+                </a>
+                <a class="product_link" href="">
+                    <i class="absolute -bottom-20 left-8 fa-solid fa-cart-plus lg:text-2xl lg:block hidden"></i>
+                </a>
+                <div class="w-36 lg:mt-20 mt-2   mx-auto text-center">
+                    <P class="text-xs opacity-60">BÀN GHẾ SOFA</P>
+                    <a class="link_sofa" href="">
+                        <h4>Ghế sofa SF108</h4>
+                    </a>
+                    <strong>13,576,000 đ</strong>
+                </div>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_table "></div>
+                </a>
+                <a class="product_link" href="">
+                    <i class="absolute -bottom-20 left-8 fa-solid fa-cart-plus lg:text-2xl lg:block hidden"></i>
+                </a>
+                <div class="w-36 lg:mt-20 mt-2   mx-auto text-center">
+                    <P class="text-xs opacity-60">BÀN GHẾ SOFA</P>
+                    <a class="link_sofa" href="">
+                        <h4>Ghế sofa SF108</h4>
+                    </a>
+                    <strong>13,576,000 đ</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sản phẩm liên quan -->
+    <div class="container lg:w-11/12 w-11/12 lg:mx-auto mx-0 mt-14">
+        <div>
+            <h3 class="lg:text-4xl text-2xl  lg:mb-8 ml-3">Thông tin hữu ích</h3>
+        </div>
+        <div class="flex gap-8 ml-6 ">
+            <div class="lg:block hidden">
+                <a class="info_link" href="">
+                    <div>
+                        <div class="img-inner-info">
+                            <img class="img-inner_item" src="./../img/thong tin/1.jpg" alt="">
+                        </div>
+                        <h2 class="lg:text-xl lg:font-medium lg:leading-6 text-base mt-2">
+                            ALIQUAM PLACERAT NISL NEC IMPERDIET VEHICULA. PHASELLUS TEMPUS LIGULA ID ORIC FINIBUS FEUGIAT
+                        </h2>
+                        <p class="opacity-70 mt-4 info-text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, massa non viverra...</p>
+                        <h3 class="mt-4 text-sm font-semibold text-yellow-400">ĐỌC THÊM</h3>
+                    </div>
+
+                </a>
+
+            </div>
+            <div class="lg:block hidden">
+                <a class="info_link" href="">
+                    <div>
+                        <div class="img-inner-info">
+                            <img class="img-inner_item" src="./../img/thong tin/2.jpg" alt="">
+                        </div>
+                        <h2 class="lg:text-xl lg:font-medium lg:leading-6 text-base mt-2">
+                            ALIQUAM PLACERAT NISL NEC IMPERDIET VEHICULA. PHASELLUS TEMPUS LIGULA ID ORIC FINIBUS FEUGIAT
+                        </h2>
+                        <p class="opacity-70 mt-4 info-text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, massa non viverra...</p>
+                        <h3 class="mt-4 text-sm font-semibold text-yellow-400">ĐỌC THÊM</h3>
+                    </div>
+
+                </a>
+
+            </div>
+            <div>
+                <a class="info_link" href="">
+                    <div>
+                        <div class="img-inner-info">
+                            <img class="img-inner_item" src="./../img/thong tin/3.jpg" alt="">
+                        </div>
+                        <h2 class="lg:text-xl lg:font-medium lg:leading-6 text-base font-medium mt-2">
+                            IN RUTRUM TEMPUS PUPUS , UT EUISMOD DUI FACILIS AC. FUSCE SEMPER SIGNISSIM DIAM A EGESTAS.
+                        </h2>
+                        <p class="opacity-70 mt-4 lg:text-base text-xs info-text ">lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, massa non viverra...</p>
+                        <h3 class="mt-4 text-sm font-semibold text-yellow-400">ĐỌC THÊM</h3>
+                    </div>
+
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <!-- google map -->
+    <div class="container lg:w-11/12 w-full lg:mx-auto mx-0 mt-14">
+        <div>
+            <h3 class="lg:text-4xl text-2xl  lg:mb-8 ml-3">Địa chỉ</h3>
+        </div>
+        <iframe class=" w-full " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.735219368573!2d105.77804671473172!3d21.04327798599051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454cca30c3f95%3A0x9626e09f681b7ea!2zTmcuIDg5IFBo4bqhbSBWxINuIMSQ4buTbmcsIE1haSBE4buLY2gsIEPhuqd1IEdp4bqleSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1662607159624!5m2!1svi!2s "
+            width="600 " height="350 " style="border:0; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container lg:w-11/12 w-full lg:mx-auto mx-0 mt-14 ">
+            <div class="lg:flex justify-between ">
+                <div class="footer_list ">
+                    <h2 class="text-2xl font-semibold leading-9 ml-4 ">ĐIỀU HƯỚNG</h2>
+
+                    <ul class="mt-5 ">
+                        <li class="text-xl mt-3 footer_list-link "><a href=" ">Trang chủ</a> </li>
+                        <li class="text-xl mt-3 footer_list-link "><a href=" ">Về chúng tôi</a> </li>
+                        <li class="text-xl mt-3 footer_list-link "><a href=" ">Sản phẩm</a> </li>
+                        <li class="text-xl mt-3 footer_list-link "><a href=" ">Điểm tin hữu ích</a> </li>
+                        <li class="text-xl mt-3 footer_list-link "><a href=" ">Liên hệ</a> </li>
+                    </ul>
+                </div>
+                <div class="text-center info_footer lg:mt-0 mt-8">
+                    <div class="w-52 h-14 lg:mr-0 lg:mr-16 lg:ml-44 ml-12 ">
+                        <img src="./../img/logo/logo-mona-furniture-14.png " alt="logo-mona-furniture-14 " class="w-full h-full ">
+                    </div>
+                    <p class="text-base mt-6 ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....</p>
+                    <div class="mt-6 ">
+                        <input class="input_info " type="email " placeholder="Email ... ">
+                        <div class="button_footer flex justify-center items-center ">
+                            <button>ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="footer_list-info ">
+                    <h2 class="text-2xl font-semibold leading-9 ml-4 ">THÔNG TIN LIÊN HỆ</h2>
+                    <div class="flex mt-5">
+                        <span class="text-yellow-400 mr-1">A</span>
+                        <h3>:319 c16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</h3>
+                    </div>
+                    <div class="flex mt-5">
+                        <span class="text-yellow-400 mr-1">T</span>
+                        <h3>: 0126 922 0162</h3>
+                    </div>
+                    <div class="flex mt-5">
+                        <span class="text-yellow-400 mr-1">E</span>
+                        <div>
+                            <h3>: candinh355@gmail.com</h3>
+                            <h3> tamanhtran473@gmail.com</h3>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <div class="modal js_modal">
+        <div class="modal_container js-modal_container">
+            <div class="modal_close js_modal-close"><i class="fa-solid fa-xmark"></i></div>
+            <div class="modal_content">
+                <header class="modal_header">
+                    ĐĂNG NHẬP
+                </header>
+                <form action="" method="get">
+                    <div class="modal_body">
+
+                        <label for="" class="modal_label">Tên tài khoản hoặc địa chỉ email *</label>
+                        <input required class="modal_input" type="email" placeholder="Email ...">
+                        <label for="" class="modal_label">Mật khẩu *</label>
+                        <input required class="modal_input" type="password" placeholder="Mật Khẩu">
+                        <button id="login">ĐĂNG NHẬP</button>
+                        <input type="checkbox" class="modal_check">
+                        <label for="">Ghi nhớ mật khẩu</label>
+
+                    </div>
+                    <footer>
+                        <a class="modal_footer" href="">Quên mật khẩu?</a>
+                    </footer>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./../js/main.js "></script>
+
+</html>
