@@ -57,7 +57,11 @@ var login = document.querySelector('.login-js');
 var modal = document.querySelector('.js_modal');
 var modalClose = document.querySelector('.js_modal-close');
 var modalContainer = document.querySelector('.js-modal_container');
-var input = document.querySelector('.modal_input'); // hiện header khi xuống dưới
+var input = document.querySelector('.modal_input');
+var signup = document.querySelector('.modal_signup');
+var modalSignup = document.querySelector('.js_modal-signup');
+var modalContainerSignup = document.querySelector('.js-modal_container-signup');
+var modalCloseSignup = document.querySelector('.js_modal-close-signup'); // hiện header khi xuống dưới
 // thêm class  cho modal để show ra 
 
 login.addEventListener('click', function () {
@@ -74,7 +78,7 @@ modal.addEventListener('click', function () {
 
 modalContainer.addEventListener('click', function (even) {
   even.stopPropagation();
-}); // validate
+}); // thanh menu gán trên đầu
 
 document.addEventListener("DOMContentLoaded", function () {
   var header = document.querySelector('.js-header'); //Truy xuất div menu
@@ -95,4 +99,18 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
+}); // mở phần đăng ký
+
+signup.addEventListener('click', function () {
+  modal.classList.remove('open');
+  modalSignup.classList.add('open');
+});
+modalContainerSignup.addEventListener('click', function (even) {
+  even.stopPropagation();
+});
+modalCloseSignup.addEventListener('click', function () {
+  modalSignup.classList.remove('open');
+});
+modalSignup.addEventListener('click', function () {
+  modalSignup.classList.remove('open');
 });
