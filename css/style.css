@@ -581,16 +581,4 @@
             .footer_list-info {
                 margin-top: 30px;
             }
-<<<<<<< HEAD
         }
-        @media(max-width: 750px) {
-            .modal-container {
-              width: 90%;
-            }
-            .modal-right {
-              display: none;
-            }
-          }
-=======
-        }
->>>>>>> 8259565c259d8594885c7186987390b9d4c76973

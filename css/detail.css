@@ -1,18 +1,4 @@
-.product-description{
-    padding: 100px 0;
-}
-.product-image{
-    width: 100%;
-    margin-left: 20px;
-}
-.product-image img{
-    width: 100%;
-    padding-left: 20px;
-    
-}
-.product-count {
-	margin-top: 15px; 
-}
+
 .product-count .qtyminus,
 .product-count .qtyplus {
 	width: 34px;
