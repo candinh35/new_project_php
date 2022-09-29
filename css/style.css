@@ -261,7 +261,7 @@
 
 .footer_list {
     width: 27%;
-    padding-left: 100px;
+    padding-left: 10px;
     border-right: 1px dashed rgba(0, 0, 0, 0.2);
     padding-right: 30px;
 }
@@ -303,7 +303,6 @@
 
 .footer_list-info {
     border-left: 1px dashed rgba(0, 0, 0, 0.2);
-    padding-right: 30px;
     padding-left: 30px;
 }
 
