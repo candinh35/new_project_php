@@ -174,23 +174,51 @@
             <div class="modal_close js_modal-close"><i class="fa-solid fa-xmark"></i></div>
             <div class="modal_content">
                 <header class="modal_header">
-                    ĐĂNG NHẬP
+                    LOGIN
                 </header>
                 <form action="" method="get">
                     <div class="modal_body">
 
-                        <label for="" class="modal_label"> Email *</label>
+                        <label for="" class="modal_label">Account or email address *</label>
                         <input required class="modal_input" type="email" placeholder="Email ...">
                         <label for="" class="modal_label">Password *</label>
-                        <input required class="modal_input" type="password" placeholder="Password">
+                        <input required class="modal_input" type="password" placeholder="password">
                         <button id="login">Login</button>
                         <input type="checkbox" class="modal_check">
-                        <label for="">remember password</label>
+                        <label for="">Remember me</label>
 
                     </div>
-                    <footer>
+                    <footer class="flex justify-between">
                         <a class="modal_footer" href="">Forgot your password?</a>
+                        <p class="modal_signup" href="">Don't have an account ?</p>
                     </footer>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- đăng ký -->
+    <div class="modal-signup js_modal-signup">
+        <div class="modal_container-signup js-modal_container-signup">
+            <div class="modal_close-signup js_modal-close-signup"><i class="fa-solid fa-xmark"></i></div>
+            <div class="modal_content-signup">
+                <header class="modal_header-signup">
+                    SIGNUP
+                </header>
+                <form action="" method="get">
+                    <div class="modal_body-signup">
+
+                        <label for="" class="modal_label-signup">Account name or email address *</label>
+                        <input required class="modal_input-signup" type="email" placeholder="Email ...">
+                        <label for="" class="modal_label-signup">Password *</label>
+                        <input required class="modal_input-signup" type="password" placeholder="Password">
+                        <label for="" class="modal_label-signup">Confirm password *</label>
+                        <input required class="modal_input-signup" type="password" placeholder="confirm password">
+                        <button id="signup">Signup</button>
+
+                    </div>
                 </form>
 
             </div>
