@@ -52,3 +52,9 @@
     line-height: 33px;
     font-size: 30px;
 }
+
+@media (max-width:740px) {
+    .product-info {
+        width: 100%;
+    }
+}

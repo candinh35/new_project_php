@@ -276,7 +276,7 @@
 }
 
 .info_footer {
-    padding: 0 50px;
+    padding: 0 15px;
 }
 
 .input_info {
@@ -570,7 +570,7 @@
     .footer_list {
         width: 100%;
         border-right: none;
-        padding-left: 50px;
+        padding-left: 25px;
     }
     .button_footer {
         margin-left: 30%;
