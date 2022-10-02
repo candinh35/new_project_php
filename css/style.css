@@ -304,6 +304,7 @@
 .footer_list-info {
     border-left: 1px dashed rgba(0, 0, 0, 0.2);
     padding-left: 30px;
+    width: 26%;
 }
 
 .modal {
@@ -577,5 +578,6 @@
     }
     .footer_list-info {
         margin-top: 30px;
+        width: 100%;
     }
 }
